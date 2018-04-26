@@ -7,16 +7,27 @@
 	margin-bottom: 2px;
 }
 .menu > ul{
+	width:100%;
+	height: 50px;
 }
 .menu > ul > li{
-	display:inline;
+	width:20%;
+	border-radius: 5px;
+	float: left;
 	background-color: #CCC;
 	list-style-type: none;
-	text-align: center;
+	padding: 0%;
+	margin: 0%;
 }
 .menu > ul > li > a{
+	display: block;
+	width:100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
 	color:#000;
 	text-decoration: none;
+	font-size: 1.2em;
 }
 .left-sidebar{
 	width:100px;
