@@ -158,4 +158,19 @@
 		margin: 1%;
 		padding: 1%;
 	}
+	#img-full > img{
+		width: 90%;
+		left: 5%;
+		top:25%;
+		height: 40%;
+	}
+	#img-full > #description{
+		width: 90%;
+		left:5%;
+		top:55%;
+		height:10%;
+	}
+	#img-full > #description > p{
+		font-size:1.5em;
+	}
 }
