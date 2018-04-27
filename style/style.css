@@ -5,7 +5,7 @@
 	background-color: #eeeeee;
 	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .5);
 }
-.menu{ 
+.menu{
 	margin-bottom: 2px;
 }
 .menu > ul{
@@ -65,8 +65,10 @@
 	font-weight: bold;
 }
 .main-content img{
-	width:25%;
-	height: 120px;
+	width:23%;
+	margin: 1%;
+	border-radius: 3px;
+	height: 170px;
 	float: left;
 }
 .right-sidebar{
@@ -88,25 +90,35 @@
 	margin:5px;
 }
 @media only screen and (max-width: 800px) {
-    .menu  ul  li {
-		display:block;
+	.menu{
+		display:inline-block;
+		height:100%;
+	}
+	.menu ul{
+		display:inline-block;
+		height: auto;
+	}
+	.menu  ul  li {
 		width: 100%;
+		border-top: 1px solid #FFF;
 		list-style-type: none;
 		text-align: center;
 		margin: 0px;
 		border-radius: 0px;
 	}
 	.main{
-		width:100%;
-	}
-	.main-content img{
-		width: 100%;
-		float: none;
+		width:98%;
 		height: auto;
+	}
+	.main-content > img{
+		width: 98%;
+		height:300px;
+		float: none;
 	}
 	.left-sidebar, .right-sidebar, .main-content, .footer{
 		float:none;
-		width:100%;
-		padding: 0px;
+		width:96%;
+		margin: 1%;
+		padding: 1%;
 	}
 }
