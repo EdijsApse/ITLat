@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KIVS Mājaslapa</title>
+	<title>Edija Apses Workshop's</title>
 </head>
 <body>
 	<div class="main">
@@ -15,7 +15,7 @@
 					<a href="index.html">Sākums</a>
 				</li>
 				<li>
-					<a href="about.html">Par Skolu</a>
+					<a class="active" href="about.html">Par Skolu</a>
 				</li>
 				<li>
 					<a href="projects.html">Projekti</a>
@@ -29,19 +29,76 @@
 			</ul>
 		</div>
 		<div class="left-sidebar">
-			Kreisā sānjosla
+			<div class="add-job-form-body">
+				<div class="add-job-form">
+					<h1>Pievieno jaunu darāmo darbu</h1>
+					<form>
+						<p>Darba nosaukums:</p><input id="job-title" type="text"><br>
+						<p>Darba apraksts:</p><input id="job-description" type="text"><br>
+						<button id="accept" type="button">Pievienot darbu</button>
+						<button id="decline" type="button">Aizvērt Logu</button>
+					</form>
+                    <div id="notification">
+                		<h3>Darbus mēs glabājam sīkdatnēs(cookies) tāpēc lūgums pārlūkam atļaut tos izveidot.</h3>
+                	</div>
+				</div>
+			</div>
+			<div class="add-job">
+				<button id="add-job" type="button">Pievienot darāmo darbu</button>
+			</div>
 		</div>
 		<div class="main-content">
-			<h1>Virsraksts 1</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi facere dolorem asperiores. Dolorum ducimus suscipit deserunt, cupiditate architecto, laudantium, voluptatum ullam quod magnam laboriosam sint nulla pariatur molestiae tempora!<p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi facere dolorem asperiores. Dolorum ducimus suscipit deserunt, cupiditate architecto, laudantium, voluptatum ullam quod magnam laboriosam sint nulla pariatur molestiae tempora!<p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi facere dolorem asperiores. Dolorum ducimus suscipit deserunt, cupiditate architecto, laudantium, voluptatum ullam quod magnam laboriosam sint nulla pariatur molestiae tempora!<p>
+			<div class="section">
+				<h1>ITLat WEB programmēšanas kursu pirmā Mājaslapa</h1>
+				<p>Mājaslapa tika izstrādāta gan brīvajā laikā, gan lekciju laikā.</p>
+				<p>Mājaslapas galvenais mērķis ir nostiprināt zināšanas WEB izstrādes pamatos.<p>
+				<p>Izstrādes laikā tika iepazīstināts ar versiju kontroles sistēmu - GIT, un izveidots personīgais profils GITHUB mājaslapā, kurā arī tika veidots mājaslapas versijas</p>
+				<p>Mājaslapā tiek pielietots:</p>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Java Script(jQuery)</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h1>WEB Programmēšanas kursu plāns</h1>
+				<p>Kursu laikā tiek plānots iepazīties ar sekojošajiem tematiem:</p>
+				<ul>
+					<li>Skices veidošana</li>
+					<li>Izstrādes rīki</li>
+					<li>HTML5 ievads un to elementi</li>
+					<li>HTML formas</li>
+					<li>CSS ievads un tā sintakse</li>
+					<li>CSS pozicionēšana</li>
+					<li>Izvēlnes veidošanas principi</li>
+					<li>CSS „media” vaicājumi</li>
+					<li>Vizītkartes tipa mājas lapas izveide</li>
+					<li>Ievads par „jQuery” un tā sintakse</li>
+					<li>Ietvara „Bootstrap” ievads un tā pielietošana adaptīva (responsīva) dizaina veidošanā</li>
+					<li>Adaptīva mājas lapas izveide</li>
+					<li>OOP PHP</li>
+					<li>Versiju kontroles sistēmas</li>
+					<li>Tīmekļa servera konfigurēšana un domēna reģistrēšanā</li>
+					<li>Virtuālo hostu izveide</li>
+					<li>Datu bāzes normālformas</li>
+					<li>Satura pārvaldības sistēma „Joomla”</li>
+					<li>Ievads par ietvara „Laravel” un tā pielietošana</li>
+					<li>Google piedāvātie rīki mājas lapām</li>
+				</ul>
+			</div>
 		</div>
 		<div class="right-sidebar">
-			Labā sānjosla
+			<h1 class="title">Mājaslapas Autors</h1>
+			<img src="images/profile_image.jpg" />
+			<p class="info">Vārds: Edijs Apse</p>
+			<p class="info">Vecums: 23 Gadi</p>
+			<p class="info">Dzīvesvieta: Jūrmala</p>
+			<p class="info" id="number">Numurs: 29597764</p>
+			<p id="mobile" class="info">Numurs: <a href = "tel: +371 29597764">29597764</a></p>
+			<p class="info">Skype: edijs143</p>
 		</div>
 		<div class="footer">
-			Mājaslapas kājene
+			<p>Visas tiesības paturētas @Edijs Apse</p>
 		</div>
 	</div>
 </body>

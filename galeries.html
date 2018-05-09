@@ -7,7 +7,7 @@
 	<script src="js/galeries.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KIVS Mājaslapa</title>
+	<title>Edija Apses Workshop's</title>
 </head>
 <body>
 	<div id="img-full">
@@ -29,7 +29,7 @@
 					<a href="projects.html">Projekti</a>
 				</li>
 				<li>
-					<a href="galeries.html">Galerijas</a>
+					<a class="active" href="galeries.html">Galerijas</a>
 				</li>
 				<li>
 					<a href="contact.html">Kontakinformācija</a>
@@ -37,7 +37,23 @@
 			</ul>
 		</div>
 		<div class="left-sidebar">
-			Kreisā sānjosla
+			<div class="add-job-form-body">
+				<div class="add-job-form">
+					<h1>Pievieno jaunu darāmo darbu</h1>
+					<form>
+						<p>Darba nosaukums:</p><input id="job-title" type="text"><br>
+						<p>Darba apraksts:</p><input id="job-description" type="text"><br>
+						<button id="accept" type="button">Pievienot darbu</button>
+						<button id="decline" type="button">Aizvērt Logu</button>
+					</form>
+                    <div id="notification">
+                		<h3>Darbus mēs glabājam sīkdatnēs(cookies) tāpēc lūgums pārlūkam atļaut tos izveidot.</h3>
+                	</div>
+				</div>
+			</div>
+			<div class="add-job">
+				<button id="add-job" type="button">Pievienot darāmo darbu</button>
+			</div>
 		</div>
 		<div class="main-content">
 			<img src="images/img1.jpg">
@@ -46,10 +62,17 @@
 			<img src="images/img4.jpg">
 		</div>
 		<div class="right-sidebar">
-			Labā sānjosla
+			<h1 class="title">Mājaslapas Autors</h1>
+			<img src="images/profile_image.jpg" />
+			<p class="info">Vārds: Edijs Apse</p>
+			<p class="info">Vecums: 23 Gadi</p>
+			<p class="info">Dzīvesvieta: Jūrmala</p>
+			<p class="info" id="number">Numurs: 29597764</p>
+			<p id="mobile" class="info">Numurs: <a href = "tel: +371 29597764">29597764</a></p>
+			<p class="info">Skype: edijs143</p>
 		</div>
 		<div class="footer">
-			Mājaslapas kājene
+			<p>Visas tiesības paturētas @Edijs Apse</p>
 		</div>
 	</div>
 </body>
