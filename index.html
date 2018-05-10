@@ -92,21 +92,53 @@
 			<div class="section">
 				<h1>Lietotāja Forma</h1>
 				<form id="person">
-					<span>Vārds:</span><input id="name" type="text"><br/>
-					<span>Uzvārds:</span><input id="surname" type="text"><br/>
-					<span>E-Pasts:</span><input id="name" type="text"><br/>
-					<span>Tel. Numurs:</span><input id="name" type="number"><br/>
-					<span class="inputTitle">Dzimums:</span><br/>
-					<span >Vīrietis</span><input type="radio" name="gender" value="male">
-					<span >Sieviete</span><input type="radio" name="gender" value="female"><br/>
-					<span class="inputTitle">Mīļākā krāsa:</span><br/>
-					<span>Melna</span><input type="checkbox" name="favColor" value="black">
-					<span>Balta</span><input type="checkbox" name="favColor" value="white"><br/>
-					<select name="city">
-						<option value="Jūrmala">Jūrmala</option>
-						<option value="Rīga">Rīga</option>
-						<option value="Jelgava">Jelgava</option>
-					</select><br/>
+					<div class="form-field">
+							<span>Vārds:</span>
+							<input id="name" type="text">
+					</div>
+					<div class="form-field">
+							<span>Uzvārds:</span>
+							<input id="surname" type="text">
+					</div>
+					<div class="form-field">
+							<span>E-Pasts:</span>
+							<input id="name" type="text">
+					</div>
+					<div class="form-field">
+							<span>Tel. Numurs:</span>
+							<input id="name" type="number">
+					</div>
+					<div class="form-field">
+						<div class="field-title">
+							<span>Dzimums:</span>
+						</div>
+						<div class="field-options">
+							<span>Vīrietis:</span>
+							<input type="radio" name="gender" value="male"><br/>
+							<span>Sieviete:</span>
+							<input type="radio" name="gender" value="female">
+						</div>
+					</div>
+					<div class="form-field">
+						<div class="field-title">
+							<span>Mīļākā krāsa:</span>
+						</div>
+						<div class="field-options">
+							<span>Melna</span>
+							<input type="checkbox" name="favColor" value="black"><br/>
+							<span>Balta</span>
+							<input type="checkbox" name="favColor" value="white">
+						</div>
+					</div>
+					<div class="form-field">
+						<span>Dzīves vieta:</span>
+						<select name="city">
+							<option value="Jūrmala">Jūrmala</option>
+							<option value="Rīga">Rīga</option>
+							<option value="Jelgava">Jelgava</option>
+						</select>
+					</div>
+					<input type="submit" value="Pieteikties">
 				</form>
 			</div>
 		</div>
