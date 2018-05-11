@@ -18,4 +18,5 @@ $(document).ready(function() {
 			});
 		});
 	});
+	$(".social-icon > a > img").off("click");
 });

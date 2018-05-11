@@ -477,6 +477,56 @@ img{
 	opacity: 1;
 	transition: all 0.3s;
 }
+.main-content > .section > p.contact{
+	font-size:20px;
+	margin:20px 0 20px 20px;
+	text-align: left;
+}
+.main-content > .section > p.contact:first-letter{
+	font-weight: normal;
+	font-size:20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.main-content > .section > .social{
+	width:95%;
+	display: inline-block;
+	border-radius: 3px;
+	margin:0px auto;
+	background-color:#FFF;
+	border:1px solid #599ff7;
+}
+.main-content > .section > .social > h2{
+	display:block;
+	font-size:20px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 2%;
+	background-color: #599ff7;
+	color:#FFF;
+}
+.main-content > .section > .social > .social-icon{
+	position: relative;
+	left:1%;
+	width:30%;
+	min-height:190px;
+	margin:1%;
+	float:left;
+}
+.main-content > .section > .social > .social-icon > a{
+	display: block;
+	height:auto;
+}
+.main-content > .section > .social > .social-icon > a > img{
+	width:95%;
+	height:95%;
+	filter:blur(3px) grayscale(100%);
+	transition: all 0.3s;
+}
+.main-content > .section > .social > .social-icon > a > img:hover{
+	width:100%;
+	height:100%;
+	filter:blur(0.5px) grayscale(0%);
+	transition: all 0.3s;
+}
 .right-sidebar{
 	width:270px;
 	min-height: 200px;
