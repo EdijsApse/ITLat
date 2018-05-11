@@ -5,16 +5,34 @@ $(document).ready(function() {
 		$("#preview").fadeIn("fast", function(){
 			$(image).attr("src", image_src);
 			$("#preview > #image").append(image);
-			$(image).fadeIn("fast", function(){
-				$("#close").fadeIn("slow");
-				//$("body").css("overflow","hidden");
+			$("#preview > #image").fadeIn("fast", function(){
+				$(image).fadeIn("fast", function(){
+					$(".close").fadeIn("slow");
+				});
 			});
 		});
-		$("#close").click(function(){
+		$(".close").click(function(){
 			$("#preview").fadeOut(200, function(){
 				$("#image > img").remove();
-				$("#close").css("display", "none");
-				//$("body").css("overflow","scroll");
+				$(".close, #image").css("display", "none");
+			});
+		});
+	});
+	$(".video").click(function(){
+		var video = document.createElement("iframe"),
+			video_src = $(this).children("iframe").attr("src");
+		$("#preview").fadeIn("fast", function(){
+			$(video).attr("src", video_src);
+			$("#preview > #video").append(video);
+			$("#preview > #video").fadeIn("fast", function(){
+				$(".close").fadeIn("fast");
+			});
+			
+		});
+		$(".close").click(function(){
+			$("#preview").fadeOut(200, function(){
+				$("#video > iframe").remove();
+				$(".close, #video").css("display", "none");
 			});
 		});
 	});
