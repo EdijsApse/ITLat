@@ -7,12 +7,14 @@ $(document).ready(function() {
 			$("#preview > #image").append(image);
 			$(image).fadeIn("fast", function(){
 				$("#close").fadeIn("slow");
+				//$("body").css("overflow","hidden");
 			});
 		});
 		$("#close").click(function(){
 			$("#preview").fadeOut(200, function(){
 				$("#image > img").remove();
 				$("#close").css("display", "none");
+				//$("body").css("overflow","scroll");
 			});
 		});
 	});
