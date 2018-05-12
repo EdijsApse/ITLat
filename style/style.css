@@ -716,6 +716,9 @@ img{
 		width:30%;
 		height:130px;
 	}
+	.main-content > .section > .social > .social-icon > a > img{
+		filter:blur(0px) grayscale(0%);
+	}
 	.left-sidebar{
 		float:none;
 		width:96%;
