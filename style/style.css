@@ -697,9 +697,11 @@ img{
 		filter:blur(0px) grayscale(0%);
 	}
 	#preview > #image{
+		top:20px;
 		width:75%;
 	}
 	#preview > #video{
+		top:20px;
 		width:70%;
 	}
 	#preview > #video > iframe{
