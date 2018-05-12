@@ -671,7 +671,7 @@ img{
 	width:100%;
 	margin:0px auto;
 }
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1300px) {
 	.main{
 		width:100%;
 	}
@@ -695,6 +695,15 @@ img{
 	}
 	.main-content > .section > .social > .social-icon > a > img{
 		filter:blur(0px) grayscale(0%);
+	}
+	#preview > #image{
+		width:75%;
+	}
+	#preview > #video{
+		width:70%;
+	}
+	#preview > #video > iframe{
+		height: 250px;
 	}
 }
 @media only screen and (max-width: 800px) {
