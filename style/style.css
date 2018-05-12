@@ -531,10 +531,8 @@ img{
 }
 .main-content > .section > .social > .social-icon{
 	position: relative;
-	left:1%;
-	width:30%;
-	min-height:190px;
-	margin:1%;
+	width:29%;
+	margin:2%;
 	float:left;
 }
 .main-content > .section > .social > .social-icon > a{
@@ -542,14 +540,12 @@ img{
 	height:auto;
 }
 .main-content > .section > .social > .social-icon > a > img{
-	width:95%;
-	height:95%;
+	width:100%;
+	height:100%;
 	filter:blur(3px) grayscale(100%);
 	transition: all 0.3s;
 }
 .main-content > .section > .social > .social-icon > a > img:hover{
-	width:100%;
-	height:100%;
 	filter:blur(0.5px) grayscale(0%);
 	transition: all 0.3s;
 }
@@ -714,10 +710,11 @@ img{
 		height: auto;
 		border-radius:0px;
 	}
-	.main-content > img{
-		width: 98%;
-		height:300px;
-		float: none;
+	.main-content > .section > .images > img{
+		position: relative;
+		left:2%;
+		width:30%;
+		height:130px;
 	}
 	.left-sidebar{
 		float:none;
@@ -733,21 +730,6 @@ img{
 	.footer{
 		width:98%;
 		margin: 1%;
-	}
-	#img-full > img{
-		width: 90%;
-		left: 5%;
-		top:25%;
-		height: 40%;
-	}
-	#img-full > #description{
-		width: 90%;
-		left:5%;
-		top:55%;
-		height:10%;
-	}
-	#img-full > #description > p{
-		font-size:1.5em;
 	}
 	.right-sidebar{
 		width:98%;
@@ -795,6 +777,14 @@ img{
 	#preview > #image{
 		width:75%;
 	}
+	#preview > #video{
+		top:80px;
+		width:80%;
+	}
+	#preview > #video > iframe{
+		width:100%;
+		height: 300px;
+	}
 }
 @media only screen and (max-width: 650px) {
 	.left-sidebar, .main-content{
@@ -810,20 +800,26 @@ img{
 	.main-content > .section > #person{
 		width: 90%;
 	}
-	#img-full > img{
-		width: 90%;
-		left: 5%;
-		top:25%;
-		height: 40%;
+	.main-content > .section > .project{
+		display: inline-block;
+		width:90%;
+		left:0;
+		margin:0px auto;
+		margin:2% 0 2% 0;
+		float:none;
 	}
-	#img-full > #description{
-		width: 90%;
-		left:5%;
-		top:55%;
-		height:10%;
+	.main-content > .section > .images > img{
+		left:0%;
+		width:48%;
+		margin:1%;
+		height:150px;
 	}
-	#img-full > #description > p{
-		font-size:1.5em;
+	.main-content > .section > .video{
+		display: inline-block;
+		width:48%;
+		margin:0px auto;
+		margin:1% 0 1% 0;
+		float: none;
 	}
 	.right-sidebar > .title{
 		font-size: 22px;
@@ -873,8 +869,19 @@ img{
 	#preview > #image{
 		width:90%;
 	}
+	#preview > #video{
+		top:60px;
+		width:90%;
+	}
+	#preview > #video > iframe{
+		width:100%;
+		height: 350px;
+	}
 }
 @media only screen and (max-width: 500px) {
+	.footer > p{
+		font-size: 12px;
+	}
 	.left-sidebar > .add-job-form-body > .add-job-form{
 		position: fixed;
 		width: 90%;
@@ -920,7 +927,46 @@ img{
 		transition: all 0.3s;
 		cursor: pointer;
 	}
-	#preview > #image{
+	.main-content > .section > #person > .form-field > input{
+		width:50%;
+	}
+	.main-content > .section > p > span{
+		position: relative;
+		clear: both;
+		display:block;
+	}
+	.main-content > .section > .images > img{
+		width:90%;
+		float: none;
+		margin:0px auto;
+		margin:1% 0 1% 0;
+		height:200px;
+	}
+	.main-content > .section > .video{
+		width:90%;
+		height:200px;
+	}
+	.main-content > .section > .video > iframe{
+		height:100%;
+	}
+	.main-content > .section > .social > .social-icon{
+		display: inline-block;
+		width:40%;
+		margin:0px auto;
+		margin:2% 2% 2% 2%;
+		float:none;
+	}
+	#preview > #video{
+		top:30px;
 		width:95%;
+	}
+	#preview > #video > iframe{
+		width:100%;
+		height: 320px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.main-content > .section > #person > .form-field > input{
+		width:40%;
 	}
 }
