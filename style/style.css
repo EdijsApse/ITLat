@@ -956,6 +956,13 @@ img{
 		margin:2% 2% 2% 2%;
 		float:none;
 	}
+	#preview > #image{
+		width:90%;
+		height:300px;
+	}
+	#preview > #image > img{
+		height: 100%;
+	}
 	#preview > #video{
 		top:30px;
 		width:95%;
@@ -968,5 +975,8 @@ img{
 @media only screen and (max-width: 300px) {
 	.main-content > .section > #person > .form-field > input{
 		width:40%;
+	}
+	#preview > #image{
+		height:200px;
 	}
 }
