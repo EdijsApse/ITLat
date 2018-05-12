@@ -31,7 +31,6 @@ img{
 	background-color: #72b1ff;
 	list-style-type: none;
 	padding: 0%;
-	
 }
 .menu > ul > li:first-child{
 	border-top-left-radius: 5px;
@@ -671,6 +670,32 @@ img{
 	display: none;
 	width:100%;
 	margin:0px auto;
+}
+@media only screen and (max-width: 1366px) {
+	.main{
+		width:100%;
+	}
+	.menu > ul{
+		width:100%;
+	}
+	.menu > ul > li{
+		width:20%;		
+	}
+	.left-sidebar{
+		width:23%;
+		margin:1%;
+	}
+	.right-sidebar{
+		width:23%;
+		margin:1%;
+	}
+	.main-content{
+		width:50%;
+		margin:0%;
+	}
+	.main-content > .section > .social > .social-icon > a > img{
+		filter:blur(0px) grayscale(0%);
+	}
 }
 @media only screen and (max-width: 800px) {
 	.menu{
