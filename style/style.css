@@ -697,14 +697,15 @@ img{
 		filter:blur(0px) grayscale(0%);
 	}
 	#preview > #image{
-		top:20px;
 		width:75%;
 	}
 	#preview > #video{
-		top:20px;
 		width:70%;
+		top:50px;
 	}
 	#preview > #video > iframe{
+		width:100%;
+		top:50px;
 		height: 250px;
 	}
 }
